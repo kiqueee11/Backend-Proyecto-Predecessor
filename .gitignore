@@ -23,3 +23,4 @@ media/
 **/migrations/__pycache__/
 
 README.md
+# Ignorar archivos de migraciones
