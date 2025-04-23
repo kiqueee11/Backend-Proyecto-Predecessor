@@ -1,5 +1,10 @@
 from django.contrib import admin
 
+from Partidas.models import Partida
 
 class PartidaAdmin(admin.ModelAdmin):
-    list_display = ()
+    list_display = ('fecha', 'equipo1', 'equipo2',)
+    ordering = ('-fecha',)
+    list_filter = ('fecha',)
+
+admin.site.register(Partida, PartidaAdmin)
