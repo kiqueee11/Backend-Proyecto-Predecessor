@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     'Usuarios',
     'Equipos',
+    'Personajes',
 ]
 
 MIDDLEWARE = [
