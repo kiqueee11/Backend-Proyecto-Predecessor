@@ -21,7 +21,7 @@ class CustomUserManager(BaseUserManager):
             raise ValueError('Email ya registrado')
 
         if len(password) < 8:
-            raise ValueError("La contraseña debe tener por lo menos 8 caractéres")
+            raise ValueError("La contraseña debe tener por lo menos 8 caracteres")
 
         user = self.model(email=email, **extra_fields)
         user.set_password(password)
