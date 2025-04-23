@@ -2,7 +2,6 @@ import secrets
 
 from django.db import models
 from django.db.models import ManyToManyField, ForeignKey
-from django.forms import SlugField
 
 from Equipos.models import Equipo
 from Redes.models import RedSocial
