@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'Partidas',
     'Usuarios',
     'Equipos',
+    'Personajes',
 ]
 
 MIDDLEWARE = [
