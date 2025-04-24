@@ -69,9 +69,9 @@
 - **Descripción:** Inicia sesión y devuelve los datos necesarios para la autenticación y control de acceso.
 - **Respuesta incluye:**
   - `slug`: Identificador único del usuario.
-  - `access_token`: Token de acceso para autenticación. (NO LO USAMOS EN NINGUNA LLAMADA. POR AHORA NO SIRVE DE NADA)
-  - `is_staff`: Booleano que indica si el usuario tiene permisos de staff. (RECOMENDACIÓN -> El rol de staff puede ser para los representantes de cada equipo)
-  - `is_superuser`: Booleano que indica si el usuario tiene permisos de superusuario. (RECOMENDACIÓN -> El rol superuser puede ser para el admin de la app)
+  - `access_token`: Token de acceso para autenticación. `(NO LO USAMOS EN NINGUNA LLAMADA. POR AHORA NO SIRVE DE NADA)`
+  - `is_staff`: Booleano que indica si el usuario tiene permisos de staff. `(RECOMENDACIÓN -> El rol de staff puede ser para los representantes de cada equipo)`
+  - `is_superuser`: Booleano que indica si el usuario tiene permisos de superusuario. `(RECOMENDACIÓN -> El rol superuser puede ser para el admin de la app)`
  
 ---
 
