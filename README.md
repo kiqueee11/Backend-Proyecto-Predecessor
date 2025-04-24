@@ -18,7 +18,7 @@
 ---
 
 ### ✏️ Actualizar Equipo
-- **Ruta:** `PUT /equipos/update/<slug:slug>`
+- **Ruta:** `Post /equipos/update/<slug:slug>`
 - **Descripción:** Actualiza los datos de un equipo específico usando su `slug`.
 - **Parámetros requeridos:**
   - `slug` en la URL
