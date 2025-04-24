@@ -18,7 +18,7 @@
 ---
 
 ### ✏️ Actualizar Equipo
-- **Ruta:** `PUT /equipos/update/<slug:slug>`
+- **Ruta:** `Post /equipos/update/<slug:slug>`
 - **Descripción:** Actualiza los datos de un equipo específico usando su `slug`.
 - **Parámetros requeridos:**
   - `slug` en la URL
@@ -32,6 +32,16 @@
 - **Ruta:** `GET /personajes/getAll`
 - **Descripción:** Recupera todos los personajes disponibles.
 
+---
+
+## ⚽ Endpoints - Jugadores
+
+### 📥 Obtener todos los jugadores
+- **Ruta:**  `GET /jugadores/info/<slug:slug>`
+- **Descripción:** Recupera toda la información de los jugadores de un equipo específico con sus respesctivas redes sociales y sus links.
+- **Parámetros requeridos:**
+  - `slug` del equipo en la URL
+ 
 ---
 
 > 💡 Todos los endpoints devuelven respuestas en formato JSON.
