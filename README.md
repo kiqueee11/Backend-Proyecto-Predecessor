@@ -44,4 +44,43 @@
  
 ---
 
+🎲 Endpoints - Partidas
+📥 Obtener todas las partidas
+Ruta: GET /partidas
+
+Descripción: Recupera todas las partidas registradas en el sistema.
+
+---
+
+## 🎲 Endpoints - Partidas
+
+### 📥 Obtener todas las partidas
+- **Ruta:** `GET /partidas`
+- **Descripción:** Recupera todas las partidas registradas en el sistema.
+
+---
+
+### 🌀 Ruleta Eliminadora
+- **Ruta:** `GET /partidas/ruletaEliminadora`
+- **Descripción:** Devuelve los datos iniciales para iniciar una partida con la modalidad de ruleta eliminadora.
+- **Respuesta incluye:**
+  - El primer jugador que elige (determinado aleatoriamente con un cara o cruz).
+  - `personajes_baneados`: Array de 10 personajes seleccionados aleatoriamente y eliminados.
+  - `personajes_restantes`: Array con los personajes disponibles para la ruleta de selección.
+
+---
+
+## 👤 Endpoints - Usuarios
+
+### 🔐 Login de Usuario
+- **Ruta:** `POST /usuarios/login`
+- **Descripción:** Inicia sesión y devuelve los datos necesarios para la autenticación y control de acceso.
+- **Respuesta incluye:**
+  - `slug`: Identificador único del usuario.
+  - `access_token`: Token de acceso para autenticación.
+  - `is_staff`: Booleano que indica si el usuario tiene permisos de staff.
+  - `is_superuser`: Booleano que indica si el usuario tiene permisos de superusuario.
+ 
+---
+
 > 💡 Todos los endpoints devuelven respuestas en formato JSON.
