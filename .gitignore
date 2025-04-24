@@ -19,7 +19,7 @@ db.sqlite3
 
 # Ignorar archivos estáticos generados
 staticfiles/
-media/
+
 
 # Ignorar archivos de migraciones compilados
 **/migrations/__pycache__/
