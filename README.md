@@ -53,7 +53,7 @@
 ---
 
 ### 🌀 Ruleta Eliminadora
-- **Ruta:** `GET /partidas/ruletaEliminadora`
+- **Ruta:** `GET /partidas/ruleta-eliminadora/<str:slug>` (SLUG DE LA PARTIDA)
 - **Descripción:** Devuelve los datos iniciales para iniciar una partida con la modalidad de ruleta eliminadora.
 - **Respuesta incluye:**
   - El primer jugador que elige (determinado aleatoriamente con un cara o cruz).
