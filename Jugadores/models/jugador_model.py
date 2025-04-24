@@ -11,7 +11,6 @@ class Jugador(models.Model):
     nombre = models.CharField(max_length=100, verbose_name="Nombre del jugador")
     nickname = models.CharField(unique=True, null=False, blank=False, verbose_name="Nickname en el juego")
     slug = models.SlugField(max_length=100, unique=True, null=True, blank=True)
-    redes = ManyToManyField(RedSocial, related_name="jugador", blank=True)
     equipo = ForeignKey(Equipo, on_delete=models.SET_NULL, related_name="jugadores", verbose_name="Equipo del jugador", null=True, blank=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

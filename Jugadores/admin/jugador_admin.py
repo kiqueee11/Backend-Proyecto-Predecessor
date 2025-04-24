@@ -5,7 +5,6 @@ from Jugadores.models import Jugador
 
 class JugadorAdmin(admin.ModelAdmin):
     list_display = ('nombre', 'nickname', 'slug')
-    filter_horizontal = ('redes',)
     search_fields = ('nickname',)
     ordering = ('created_at',)
 
