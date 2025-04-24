@@ -19,6 +19,5 @@ class Personaje(models.Model):
             self.slug = slug
         super().save(*args, **kwargs)
 
-
-
-
+    def __str__(self):
+        return f"{self.nombre}"

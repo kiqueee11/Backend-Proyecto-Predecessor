@@ -1,0 +1,1 @@
+from .partida_serializer import *

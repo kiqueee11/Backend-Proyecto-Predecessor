@@ -21,6 +21,26 @@ class Equipo(models.Model):
                 slug = secrets.token_urlsafe(16)
             self.slug = slug
         super().save(*args, **kwargs)
+
+    def actualizar_victorias(self):
+        from Partidas.models import Partida
+        partidas_ganadas = Partida.objects.filter(ganador=self)
+        self.victorias = len(partidas_ganadas)
+
+    def actualizar_derrotas(self):
+        from Partidas.models import Partida
+        partidas_ganadas = Partida.objects.filter(ganador=self)
+        partidas_juagadas1 = Partida.objects.filter(equipo1=self, ganador__isnull=False)
+        partidas_juagadas2 = Partida.objects.filter(equipo2=self, ganador__isnull=False)
+
+        self.derrotas = (len(partidas_juagadas1) + len(partidas_juagadas2)) - len(partidas_ganadas)
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.actualizar_victorias()
+        self.actualizar_derrotas()
+        self.calcular_winrate()
+
     
     def calcular_winrate(self):
         if self.victorias + self.derrotas > 0:
