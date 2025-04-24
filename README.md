@@ -56,7 +56,7 @@
 - **Ruta:** `GET /partidas/ruleta-eliminadora/<str:slug>` (SLUG DE LA PARTIDA)
 - **Descripción:** Devuelve los datos iniciales para iniciar una partida con la modalidad de ruleta eliminadora.
 - **Respuesta incluye:**
-  - El primer jugador que elige (determinado aleatoriamente con un cara o cruz).
+  - `primer_equipo_elegir`: El primer equipo que elige (determinado aleatoriamente con un cara o cruz).
   - `personajes_baneados`: Array de 10 personajes seleccionados aleatoriamente y eliminados.
   - `personajes_restantes`: Array con los personajes disponibles para la ruleta de selección.
 
