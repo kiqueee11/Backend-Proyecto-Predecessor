@@ -22,5 +22,12 @@ class Equipo(models.Model):
             self.slug = slug
         super().save(*args, **kwargs)
     
+    def calcular_winrate(self):
+        if self.victorias + self.derrotas > 0:
+            self.winrate = (self.victorias / (self.victorias + self.derrotas)) * 100
+        else:
+            self.winrate = 0.0
+        self.save()
+    
     def __str__(self):
         return self.nombre
