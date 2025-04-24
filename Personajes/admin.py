@@ -8,4 +8,6 @@ class PersonajeAdmin(admin.ModelAdmin):
     list_filter = ('nombre',)
     ordering = ('nombre',)
 
+    readonly_fields = ('slug',)
+
 admin.site.register(Personaje, PersonajeAdmin)
