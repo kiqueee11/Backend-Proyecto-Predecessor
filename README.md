@@ -44,14 +44,6 @@
  
 ---
 
-🎲 Endpoints - Partidas
-📥 Obtener todas las partidas
-Ruta: GET /partidas
-
-Descripción: Recupera todas las partidas registradas en el sistema.
-
----
-
 ## 🎲 Endpoints - Partidas
 
 ### 📥 Obtener todas las partidas
