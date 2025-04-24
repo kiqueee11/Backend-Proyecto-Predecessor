@@ -1,4 +1,4 @@
-## 📦 Endpoints - Equipos
+## Endpoints - Equipos
 
 ### ➕ Crear Equipo
 - **Ruta:** `POST /equipos/create`
@@ -26,7 +26,7 @@
 
 ---
 
-## 🧙 Endpoints - Personajes
+##  Endpoints - Personajes
 
 ### 📥 Obtener Todos los Personajes
 - **Ruta:** `GET /personajes/getAll`
@@ -34,7 +34,7 @@
 
 ---
 
-## ⚽ Endpoints - Jugadores
+##  Endpoints - Jugadores
 
 ### 📥 Obtener todos los jugadores
 - **Ruta:**  `GET /jugadores/info/<slug:slug>`
@@ -44,7 +44,7 @@
  
 ---
 
-## 🎲 Endpoints - Partidas
+##  Endpoints - Partidas
 
 ### 📥 Obtener todas las partidas
 - **Ruta:** `GET /partidas`
@@ -62,7 +62,7 @@
 
 ---
 
-## 👤 Endpoints - Usuarios
+##  Endpoints - Usuarios
 
 ### 🔐 Login de Usuario
 - **Ruta:** `POST /usuarios/login`
