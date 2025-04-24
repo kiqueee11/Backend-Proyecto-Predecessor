@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'Partidas',
     'Usuarios',
     'Equipos',
+    'Jugadores',
+    'Redes',
+    "RedesJugadores",
     'Personajes',
 ]
 
