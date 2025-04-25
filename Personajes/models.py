@@ -4,7 +4,7 @@ from django.db import models
 class Personaje(models.Model):
     nombre = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=100, unique=True, blank=True, null=True)
-    imagen = models.FileField(upload_to='media/personajes/', blank=True, null=True)
+    imagen = models.FileField(upload_to='personajes/', blank=True, null=True)
 
     class meta:
         verbose_name = 'Personaje'
