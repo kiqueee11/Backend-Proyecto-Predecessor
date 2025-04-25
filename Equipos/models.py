@@ -7,7 +7,7 @@ class Equipo(models.Model):
     victorias = models.IntegerField(default=0)
     derrotas = models.IntegerField(default=0)
     winrate = models.FloatField(default=0.0)
-    imagen = models.FileField(upload_to='media/equipos/', blank=True, null=True)
+    imagen = models.FileField(upload_to='equipos/', blank=True, null=True)
 
     class Meta:
         verbose_name = 'Equipo'
