@@ -45,6 +45,7 @@ class Usuario(AbstractBaseUser, PermissionsMixin):
     is_staff = models.BooleanField(default=False, verbose_name="Staff")
     is_active = models.BooleanField(default=True, verbose_name="Activo")
     is_superuser = models.BooleanField(default=False, verbose_name="Admin")
+    jefe_equipo = models.BooleanField(default=False, verbose_name="Jefe equipo")
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []

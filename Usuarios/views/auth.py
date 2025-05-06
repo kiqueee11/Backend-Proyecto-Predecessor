@@ -28,6 +28,7 @@ class LoginView (APIView):
                     "access_token": str(access_token),
                     "is_staff": user.is_staff,
                     "is_superuser": user.is_superuser,
+                    "jefe_equipo": user.jefe_equipo,
                 }, status=HTTP_200_OK)
             else:
                 return Response({"error": 'Invalid password'}, status=HTTP_401_UNAUTHORIZED)
