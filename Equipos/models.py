@@ -37,9 +37,12 @@ class Equipo(models.Model):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.actualizar_victorias()
-        self.actualizar_derrotas()
-        self.calcular_winrate()
+        try:
+            self.actualizar_victorias()
+            self.actualizar_derrotas()
+            self.calcular_winrate()
+        except Exception as e:
+            print(f"Error al inicializar el equipo: {e}")
 
     
     def calcular_winrate(self):
